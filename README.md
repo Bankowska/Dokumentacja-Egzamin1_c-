@@ -1,5 +1,5 @@
 # Aplikacja desktopowa w języku C#
-## 1. Cel projektu
+## 1. Opis aplikacji desktopowej
 Celem projektu jest stworzenie aplikacji desktopowej w technologii Windows Forms umożliwiającej:
 
 Wprowadzanie danych adresowych.
@@ -25,7 +25,7 @@ Język programowania: C#<br>
 Technologia GUI: Windows Forms<br>
 IDE: Visual Studio 2022<br>
 Uruchamianie aplikacji: Za pomocą przycisku Start w Visual Studio lub pliku wykonywalnego.
-## 4. Komponenty interfejsu użytkownika
+## 4. Toolsy
 Grupa pól radiowych:
 
 Pola radiowe: Pocztówka, List, Paczka.
