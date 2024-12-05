@@ -55,39 +55,39 @@ namespace PostalApp
             InitializeComponent();
 
             // Przypisanie zdarzeń do przycisków
-            btnCheckPrice.Click += BtnCheckPrice_Click;
-            btnSubmit.Click += BtnSubmit_Click;
+            cena.Click += cena_Click;
+            zatwierdz.Click += zatwierdz_Click;
         }
 
-        private void BtnCheckPrice_Click(object sender, EventArgs e)
+        private void cena_Click(object sender, EventArgs e)
         {
             // Sprawdzenie zaznaczonego pola radiowego
-            if (rbPostcard.Checked)
+            if (poczt.Checked)
             {
-                lblPrice.Text = "Cena: 1 zł";
-                pictureBox.Image = Properties.Resources.postcard; // obraz pocztowki
+                tekstCena.Text = "Cena: 1 zł";
+                pictureBox.Image = Properties.Resources.poczt; // obraz pocztowki
             }
-            else if (rbLetter.Checked)
+            else if (list.Checked)
             {
-                lblPrice.Text = "Cena: 1,5 zł";
-                pictureBox.Image = Properties.Resources.letter; // obraz listu
+                tekstCena.Text = "Cena: 1,5 zł";
+                pictureBox.Image = Properties.Resources.list; // obraz listu
             }
-            else if (rbPackage.Checked)
+            else if (paczka.Checked)
             {
-                lblPrice.Text = "Cena: 10 zł";
-                pictureBox.Image = Properties.Resources.package; // obraz paczki
+                tekstCena.Text = "Cena: 10 zł";
+                pictureBox.Image = paczka.Resources.package; // obraz paczki
             }
         }
 
-        private void BtnSubmit_Click(object sender, EventArgs e)
+        private void zatwierdz_Click(object sender, EventArgs e)
         {
-            string postalCode = txtPostalCode.Text;
+            string text1 = text1.Text;
 
-            if (postalCode.Length != 5)
+            if (text1.Length != 5)
             {
                 MessageBox.Show("Nieprawidłowa liczba cyfr w kodzie pocztowym");
             }
-            else if (!int.TryParse(postalCode, out _))
+            else if (!int.TryParse(text1, out _))
             {
                 MessageBox.Show("Kod pocztowy powinien się składać z samych cyfr");
             }
@@ -97,7 +97,7 @@ namespace PostalApp
             }
         }
     }
-}
+} // w kodzie pomogl mi chat - przepraszam :)
 ```
 ## 6. Wynik działania aplikacji
 Pola wyboru (Radio Buttons):
