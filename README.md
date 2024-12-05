@@ -38,10 +38,7 @@ Przyciski:
 
 „Sprawdź Cenę” – sprawdza wybór i wyświetla cenę oraz obraz.<br>
 „Zatwierdź” – sprawdza poprawność kodu pocztowego.<br>
-Etykieta ceny:
-
-Wyświetla cenę przesyłki w formacie: „Cena: X zł”.<br>
-<img scr="https://github.com/Bankowska/Dokumentacja_Egzamin1.py/blob/main/Zrzut%20ekranu%202024-12-05%20171326.png">
+<img src="https://github.com/Bankowska/Dokumentacja_Egzamin1.py/blob/main/Zrzut%20ekranu%202024-12-05%20171326.png">
 
 ## 5. Kod źródłowy
 ```csharp
