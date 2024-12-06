@@ -75,7 +75,7 @@ namespace PostalApp
             else if (paczka.Checked)
             {
                 tekstCena.Text = "Cena: 10 zł";
-                pictureBox.Image = paczka.Resources.package; // obraz paczki
+                pictureBox.Image = Properties.Resources.paczka; // obraz paczki
             }
         }
 
